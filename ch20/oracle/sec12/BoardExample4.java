@@ -79,7 +79,7 @@ public class BoardExample4 {
 		board.setBtitle(scanner.nextLine());
 		System.out.print("내용: ");
 		board.setBcontent(scanner.nextLine());
-		System.out.print("작성지: ");
+		System.out.print("작성자: ");
 		board.setBwriter(scanner.nextLine());
 
 		System.out.println("-------------------------------------------------------");
@@ -103,6 +103,25 @@ public class BoardExample4 {
 			}
 		}
 		
-		list()
+		list();
+	}
+
+	public void read() {
+		System.out.println("Read 메뉴를 선택하셨습니다.");
+		list();
+	}
+
+	public void clear() {
+		System.out.println("Clear 하였습니다.");
+		list();
+	}
+
+	public void exit() {
+		System.exit(0);
+	}
+
+	public static void main(String[] args) {
+		BoardExample4 boardExample = new BoardExample4();
+		boardExample.list();
 	}
 }

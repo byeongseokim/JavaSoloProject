@@ -3,8 +3,9 @@ package ch20.oracle.sec12;
 import java.util.Scanner;
 
 public class BoardExample1 {
-	
+
 	Scanner scanner = new Scanner(System.in);
+	
 
 	public void list() {
 		System.out.println();
@@ -15,6 +16,7 @@ public class BoardExample1 {
 		System.out.printf("%-6s%-12s%-16s%-40s \n", "1", "winter", "2022.01.27", "게시판에 오신 것을 환영합니다.");
 		System.out.printf("%-6s%-12s%-16s%-40s \n", "2", "winter", "2022.01.27", "올 겨울은 많이 춥습니다.");
 		mainMenu();
+
 	}
 
 	public void mainMenu() {
@@ -24,6 +26,28 @@ public class BoardExample1 {
 		System.out.print("메뉴 선택: ");
 		System.out.println();
 		
+		
+		int mainMenu = 0;
+		mainMenu = scanner.nextInt();
+		switch (mainMenu) {
+		case 1:
+			mainMenu = 1;
+			System.out.println("1.Create 메뉴를 선택하셨습니다.");
+			break;
+		case 2:
+			mainMenu = 2;
+			System.out.println("2.Read 메뉴를 선택하셨습니다.");
+			break;
+		case 3:
+			mainMenu = 3;
+			System.out.println("3.Clear 메뉴를 선택하셨습니다.");
+			break;
+		case 4:
+			mainMenu = 4;
+			System.out.println("4.Exit 메뉴를 선택하셨습니다.");
+			break;
+
+		}
 	}
 
 	public static void main(String[] args) {

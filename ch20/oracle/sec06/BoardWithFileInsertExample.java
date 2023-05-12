@@ -20,13 +20,29 @@ public class BoardWithFileInsertExample {
 					+ "VALUES (SEQ_BNO.NEXTVAL, ?, ?, ?, SYSDATE, ?, ?)";
 
 			PreparedStatement pstmt = conn.prepareStatement(sql, new String[] { "bno" });
+			/*
+			pstmt.setString(1, "눈 오는 날");
+			pstmt.setString(2, "함박눈이 내려요.");
+			pstmt.setString(3, "winter");
+			pstmt.setString(4, "snow.jpg");
+			pstmt.setBlob(5, new FileInputStream("srcch20/oracle/sec06/snow.jpg"));
+			*/
 			
+			/*
+			pstmt.setString(1, "크리스마스");
+			pstmt.setString(2, "메리 크리스마스");
+			pstmt.setString(3, "winter");
+			pstmt.setString(4, "christmas.jpg");
+			pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/spring.jpg"));
+			*/
+			
+			/*
 			pstmt.setString(1, "봄의 정원");
 			pstmt.setString(2, "정원의 꽃이 이쁘네요");
 			pstmt.setString(3, "winter");
 			pstmt.setString(4, "spring.jpg");
 			pstmt.setBlob(5, new FileInputStream("src/ch20/oracle/sec06/spring.jpg"));
-			
+			*/
 			
 		
 			
