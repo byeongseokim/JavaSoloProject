@@ -25,7 +25,7 @@ public class BoardSelectExample {
 
 			ResultSet rs = pstmt.executeQuery();
 			while (rs.next()) {
-				Borad board = new Borad();
+				Board board = new Board();
 				board.setBno(rs.getInt("bno"));
 				board.setBtitle(rs.getString("btitle"));
 				board.setBcontent(rs.getString("bcontent"));
